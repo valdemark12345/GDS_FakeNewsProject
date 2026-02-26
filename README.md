@@ -1,4 +1,7 @@
 # GDS FakeNewsProject
 Students: Lasse Helmer Larsen (rmj762), Oskar Thorvald Andersen (grf587) og Valdemar Kragh (lnk952)
 
-
+To get our environment use:
+```
+conda env create -f environment.yml
+```
