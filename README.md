@@ -5,3 +5,11 @@ To get our environment use:
 ```
 conda env create -f environment.yml
 ```
+
+### If something is updated in the venv, we should use to update:
+
+conda env export --from-history > environment.yml
+
+### After pulling, to update the environment use:
+
+conda env update -f environment.yml --prune
