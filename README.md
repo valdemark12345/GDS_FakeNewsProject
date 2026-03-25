@@ -15,13 +15,19 @@ conda env export > environment.yml
 
 conda env update -f environment.yml --prune
 
+# Accessing our code, and our code run in kaggle 
+
 Before running our code, ensure that the file '995,000_rows.csv' from the fake news corpus is in your working repository.  
+We downloaded it from this link in absalon https://absalon.ku.dk/courses/89126/files/10468050?wrap=1
 
-In order to run our code, first run the notebook Code_2_processing_chunks.ipynb this will apply our processing pipeline to the data and create parquet files with chunks of 10000 rows (you should have 100 chunk files). https://absalon.ku.dk/courses/89126/files/10468050?wrap=1
+In order to run our code, first run the notebook Code_2_processing_chunks.ipynb this will apply our processing pipeline to the data and create parquet files with chunks of 10000 rows (you should have 100 chunk files). 
 
-To train and run our simple logistic model go to code logistic and run all cells. This will train on all the chunks created in the previous step.
+To train and run our simple logistic model go to Code_logistic.ipynb and run all cells. This will train on all the chunks created in the previous step.
 
-To get the word embeddings for the model trained on distilbert and look at the kaggle code https://www.kaggle.com/code/lassehelmer/bert-binary. Afterwards to look at the gradient boosting model and the evaluation on the liar dataset, look at https://www.kaggle.com/code/lassehelmer/bert-binary-gb . We do not recommend running the code on your own machine, as extracting the embeddings took upwards of 9 hours.
+The same goes for Code_NaiveBayes.ipynb which trains and evaluates a model using naive bayes.
+
+The model running word embeddings from distilbert needs to use the distilbert tokenizer. First run the first two cells of Code_Bert.ipynb to get those. To get the word embeddings for the model trained on distilbert and look at the kaggle code https://www.kaggle.com/code/lassehelmer/bert-binary. Afterwards to look at the gradient boosting model and the evaluation on the liar dataset, look at https://www.kaggle.com/code/lassehelmer/bert-binary-gb . We do not recommend running the code on your own machine, as extracting the embeddings took upwards of 5 hours on kaggle.
+
 
 
 
