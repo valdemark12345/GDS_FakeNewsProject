@@ -26,8 +26,7 @@ To train and run our simple logistic model go to Code_logistic.ipynb and run all
 
 The same goes for Code_NaiveBayes.ipynb which trains and evaluates a model using naive bayes.
 
-The model running word embeddings from distilbert needs to use the distilbert tokenizer. First run the first two cells of Code_Bert.ipynb to get those. To get the word embeddings for the model trained on distilbert and look at the kaggle code https://www.kaggle.com/code/lassehelmer/bert-binary. Afterwards to look at the gradient boosting model and the evaluation on the liar dataset, look at https://www.kaggle.com/code/lassehelmer/bert-binary-gb . We do not recommend running the code on your own machine, as extracting the embeddings took upwards of 5 hours on kaggle.
-
+The model running word embeddings from distilbert needs to use the distilbert tokenizer. First run the first two cells of Code_Bert.ipynb to get those. To get the word embeddings for the model trained on distilbert and look at the kaggle code go to https://www.kaggle.com/code/lassehelmer/bert-binary. Afterwards to look at the gradient boosting model and the evaluation on the liar dataset, look at https://www.kaggle.com/code/lassehelmer/bert-binary-gb
 
 
 
