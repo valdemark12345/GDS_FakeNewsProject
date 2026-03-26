@@ -20,7 +20,7 @@ conda env update -f environment.yml --prune
 Before running our code, ensure that the file '995,000_rows.csv' from the fake news corpus is in your working repository.  
 We downloaded it from this link in absalon https://absalon.ku.dk/courses/89126/files/10468050?wrap=1
 
-In order to run our code, first run the notebook Code_2_processing_chunks.ipynb this will apply our processing pipeline to the data and create parquet files with chunks of 10000 rows (you should have 100 chunk files). 
+In order to run our code, first run the notebook Code2_processing_chunks.ipynb this will apply our processing pipeline to the data and create parquet files with chunks of 10000 rows (you should have 100 chunk files). 
 
 To train and run our simple logistic model go to Code_logistic.ipynb and run all cells. This will train on all the chunks created in the previous step.
 
@@ -28,5 +28,6 @@ The same goes for Code_NaiveBayes.ipynb which trains and evaluates a model using
 
 The model running word embeddings from distilbert needs to use the distilbert tokenizer. First run the first two cells of Code_Bert.ipynb to get those. To get the word embeddings for the model trained on distilbert and look at the kaggle code go to https://www.kaggle.com/code/lassehelmer/bert-binary. Afterwards to look at the gradient boosting model and the evaluation on the liar dataset, look at https://www.kaggle.com/code/lassehelmer/bert-binary-gb
 
+To run our neural network model you need to go to https://www.kaggle.com/code/oskarthorvald/notebooknn, and run all the code, if you want to train the model. Our model is saved, so if you want to see the model work you can run the last three code blocks. We have included the code to train on word embeddings. If you want to train on word embeddings you will need to change the training block, to run on the train_loader_embeddings. 
 
 
